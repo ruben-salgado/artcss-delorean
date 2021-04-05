@@ -1,0 +1,47 @@
+{
+  "name": "delorean",
+  "version": "1.0.0",
+  "description": "Dubijando a delorean con CSS",
+  "main": "src/app.mjs",
+  "scripts": {
+    "build": "npm run clean && webpack --mode=development --watch",
+    "buildpro": "npm run clean && webpack --mode=production",
+    "start": "webpack-cli serve --mode development",
+    "clean": "rimraf ./dist"
+  },
+  "author": "RSR",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.13.14",
+    "@babel/preset-env": "^7.13.12",
+    "@babel/preset-react": "^7.13.13",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.2",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^5.2.0",
+    "dat.gui": "^0.7.7",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.3.1",
+    "image-webpack-loader": "^7.0.1",
+    "mini-css-extract-plugin": "^1.4.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.4",
+    "postcss-loader": "^5.2.0",
+    "pug": "^3.0.2",
+    "pug-loader": "https://github.com/pugjs/pug-loader/tarball/master",
+    "rimraf": "^3.0.2",
+    "sass": "^1.32.8",
+    "sass-loader": "^11.0.1",
+    "style-loader": "^2.0.0",
+    "terser-webpack-plugin": "^5.1.1",
+    "uglify-js": "^3.13.3",
+    "uglifyjs-webpack-plugin": "^1.1.2",
+    "webpack": "^5.30.0",
+    "webpack-cli": "^4.6.0"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
